@@ -10,6 +10,7 @@
   "author": "Tyrnov Ivan <tyrnov.ivan@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@types/classnames": "^2.2.11",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "autoprefixer": "^10.2.4",
@@ -28,6 +29,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "formik": "^2.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
