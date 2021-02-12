@@ -1,0 +1,29 @@
+.login {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 300px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: black solid 1px;
+  padding: 15px 30px;
+
+  &__login {
+    margin: 5px;
+
+  }
+  &__password {
+    margin: 5px;
+
+  }
+  &__button {
+    margin: 5px;
+    width: 50px;
+    justify-content: end;
+
+  }
+}

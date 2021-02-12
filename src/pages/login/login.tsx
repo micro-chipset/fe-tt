@@ -1,8 +1,13 @@
 import * as React from 'react';
-import {Formik} from 'formik'
+import {Formik} from 'formik';
+import classNames from 'classnames/bind';
+
+import * as styles from './login.scss';
+
+const cn = classNames.bind(styles);
 
 export const Login = (): JSX.Element => (
-    <div>
+    <div className={cn('login')}>
         <Formik
             initialValues={{login: '', password: ''}}
             onSubmit={(values) => {
@@ -17,13 +22,17 @@ export const Login = (): JSX.Element => (
                 handleBlur,
                 handleSubmit
               }) => (
-                  <form onSubmit={handleSubmit}>
+                  <form
+                      onSubmit={handleSubmit}
+                      className={cn('form')}
+                  >
                       <input
                         type='text'
                         name='login'
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.login}
+                        className={cn('form__login')}
                       />
 
                       <input
@@ -32,9 +41,11 @@ export const Login = (): JSX.Element => (
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.password}
+                        className={cn('form__password')}
                       />
                       <button
                         type='submit'
+                        className={cn('form__button')}
                       >
                           Войти
                       </button>
